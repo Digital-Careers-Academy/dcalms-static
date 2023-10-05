@@ -410,11 +410,17 @@ hr {
 
 /* Recorded Videos */
 
-.sidebar .nav-link {
-}
-
 .sidebar .nav-link:hover {
   color: var(--primary-color);
+}
+
+.sidebar .active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.sidebar .active:hover a {
+  color: #fff;
 }
 
 .profile-img {
@@ -426,4 +432,36 @@ hr {
   height: 120px;
   width: 120px;
   object-fit: cover;
+}
+
+/* Settings */
+
+.setting a {
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 25%;
+  position: relative;
+}
+
+.setting a span {
+  width: 50%;
+  height: 1.5rem;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-85%, -50%);
+  transition: linear 0.2s all;
+}
+
+.setting a span.settings-style {
+  top: 50%;
+  left: 15%;
+  transform: translate(-15%, -50%);
+  background-color: #bfc5c5;
+  transition: linear 0.2s all;
 }
