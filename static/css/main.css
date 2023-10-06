@@ -22,6 +22,7 @@ body {
   font-family: var(--primary-font-family);
   overflow-x: hidden;
   min-height: 100vh;
+  /* overflow-x: hidden; */
 }
 
 .loginBody {
@@ -471,4 +472,41 @@ hr {
 #supportForm textarea {
   height: 300px;
   resize: none;
+}
+
+/* Checklist */
+
+.checklist img {
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+}
+.req {
+  position: relative;
+}
+
+#previousSlide {
+  display: none;
+}
+
+.checklist.telegram {
+  transform: translateX(-500%);
+  position: absolute;
+  width: 100%;
+}
+
+.slack.change-slide {
+  transform: translateX(-500%);
+  transition: all linear 0.25s;
+}
+
+.telegram.show-slide {
+  transform: translateX(0%);
+  transition: all linear 0.5s;
+  top: 0;
+  left: 0;
+}
+
+#proceedLink {
+  display: none;
 }
