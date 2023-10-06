@@ -465,3 +465,10 @@ hr {
   background-color: #bfc5c5;
   transition: linear 0.2s all;
 }
+
+/* Support */
+
+#supportForm textarea {
+  height: 300px;
+  resize: none;
+}
